@@ -6,13 +6,11 @@ import joblib
 # Instantiate flask app
 app = Flask(__name__)
 
-# Load model
-model = joblib.load("Taste")
-
 # Set up routes
 @app.route("/", methods = ['GET', 'POST'])
 def index():
     if request.method == 'POST':
+        model = joblib.load("Taste")
         sugar = request.form.get('Sugar')
         milk = request.form.get('Milk')
         pred = model.predict([[float(sugar), float(milk)]])
