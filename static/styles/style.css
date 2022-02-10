@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom, lightblue, navy);
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+.result {
+    color: burlywood;
+    width: 100%;
+    text-align: center;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    width: 100%;
+}
